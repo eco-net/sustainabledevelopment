@@ -1,0 +1,114 @@
+
+<table width="750" border="0" cellspacing="0" cellpadding="0" name="Menu">
+<tr>
+<%
+'-- tab1 -- Introduction
+response.write "<td><img src=""/shared/graphics/menu/stretch.gif"" width=""55"" height=""22"">"
+IF curtab=1 THEN
+	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+		"<a href=""/intro/index.asp""><img src=""/shared/graphics/menu/introduction_on.gif"" width=""106"" height=""22"" border=""0""></a>"
+ELSE
+	response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">" &_
+		"<a href=""/intro/index.asp""><img src=""/shared/graphics/menu/introduction_off.gif"" width=""106"" height=""22"" border=""0""></a>"
+END IF
+'-- tab2 -- network
+IF curtab=2 THEN
+	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+				"<a href=""/network/index.asp""><img src=""/shared/graphics/menu/network_on.gif"" width=""102"" height=""22"" border=""0""></a>"
+ELSE
+	IF curtab=1 THEN
+		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+	ELSE
+		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+	END IF
+	response.write "<a href=""/network/index.asp""><img src=""/shared/graphics/menu/network_off.gif"" width=""102"" height=""22"" border=""0""></a>"
+END IF
+
+'-- tab3 -- Links
+IF curtab=3 THEN
+	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+		"<a href=""/links/index.asp""><img src=""/shared/graphics/menu/links_on.gif"" width=""56"" height=""22"" border=""0""></a>"
+ELSE
+	IF curtab=2 THEN
+		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+	ELSE
+		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+	END IF
+	response.write "<a href=""/links/index.asp""><img src=""/shared/graphics/menu/links_off.gif"" width=""56"" height=""22"" border=""0""></a>"
+END IF
+
+'-- tab4 -- Econet
+IF curtab=4 THEN
+	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+		"<a href=""/econet/index.asp""><img src=""/shared/graphics/menu/econet_on.gif"" width=""108"" height=""22"" border=""0""></a>"
+	response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+ELSE
+	IF curtab=3 THEN
+		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+	ELSE
+		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+	END IF
+	response.write "<a href=""/econet/index.asp""><img src=""/shared/graphics/menu/econet_off.gif"" width=""108"" height=""22"" border=""0""></a>"
+	response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+END IF
+
+'-- tab4 -- Netværkstedet
+'IF curtab=4 THEN
+'	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+'				"<a href=""/netvaerksted/index.asp""><img src=""/shared/graphics/menu/netvaerksted_on.gif"" width=""108"" height=""22"" border=""0""></a>"
+'ELSE
+'	IF curtab=3 THEN
+'		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+'	ELSE
+'		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+'	END IF
+'	response.write "<a href=""/netvaerksted/index.asp""><img src=""/shared/graphics/menu/netvaerksted_off.gif"" width=""108"" height=""22"" border=""0""></a>"
+'END IF
+'-- tab5 -- Uddannelse
+
+'IF curtab=5 THEN
+'	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+'		"<a href=""/uddannelse/index.asp""><img src=""/shared/graphics/menu/uddannelse_on.gif"" width=""88"" height=""22"" border=""0""></a>"&_
+'		"<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">" 
+'ELSE
+'	IF curtab=4 THEN
+'		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+'	ELSE
+'		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+'	END IF
+'	response.write "<a href=""/uddannelse/index.asp""><img src=""/shared/graphics/menu/uddannelse_off.gif"" width=""88"" height=""22"" border=""0""></a>"
+'	response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"	
+'END IF
+'-- tab6 -- ubrugt
+'IF curtab=6 THEN
+'	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+'		"<a href=""/uddannelse/index.asp""><img src=""/shared/graphics/menu/uddannelse_on.gif"" width=""88"" height=""22"" border=""0""></a>"
+'ELSE
+	'IF curtab=5 THEN
+	'	response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+	'ELSE
+	'	response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+	'END IF
+	'response.write "<a href=""/uddannelse/index.asp""><img src=""/shared/graphics/menu/uddannelse_off.gif"" width=""88"" height=""22"" border=""0""></a>"
+'END IF
+'-- tab7 -- LINKS
+'IF curtab=7 THEN
+'	response.write "<img src=""/shared/graphics/menu/separator_left.gif"" width=""29"" height=""22"">" &_
+'		"<a href=""/links/index.asp""><img src=""/shared/graphics/menu/links_on.gif"" width=""34"" height=""22"" border=""0""></a>" &_
+'		"<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">" 
+'	ELSE
+'	IF curtab=5 THEN
+'		response.write "<img src=""/shared/graphics/menu/separator_right.gif"" width=""29"" height=""22"">"
+'	ELSE
+'		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+'	END IF
+'	response.write "<a href=""/links/index.asp""><img src=""/shared/graphics/menu/links_off.gif"" width=""34"" height=""22"" border=""0""></a>"
+'		response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"	
+		'response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+'END IF
+
+'response.write "<img src=""/shared/graphics/menu/separator.gif"" width=""29"" height=""22"">"
+response.write "<img src=""/shared/graphics/menu/stretch.gif"" width=""178"" height=""22""></td>"
+%>
+</tr>
+</table>

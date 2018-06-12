@@ -1,0 +1,38 @@
+<table width="750" border="0" cellspacing="0" cellpadding="0" name="Header">
+<tr> 
+<td valign="top" rowspan="3"><a href="/home/index.asp"><img src="/shared/graphics/logo.gif" width="569" height="33" border="0"></a> 
+<table width="569" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td width="8"><br></td>
+<td class="sitetag">&nbsp;&nbsp;&#8211; debate on education for sustainability</td>
+<td width="8"><br></td>
+</tr></table>
+</td>
+<td valign="top" width="1"><br></td>
+<td height="17" align="right" colspan="2"><a href="/home/index.asp">Home</a> 
+| <a href="/econet/index.asp">Contact</a></td>
+</tr>
+<tr> 
+<td valign="top" rowspan="2" width="1" background="/shared/graphics/layout/dots_vert.gif"><img src="/shared/graphics/spacer.gif" width="1" height="1"></td>
+<td background="/shared/graphics/layout/dots_horz.gif" height="1" colspan="2"><img src="/shared/graphics/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr> 
+<%if curtab=0 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner0.gif"> </td>
+<%elseif curtab=1 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner1.gif"></td>
+<%elseif curtab=2 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner2.gif"></td>
+<%elseif curtab=3 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner3.gif"></td>
+<%elseif curtab=4 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner5.gif"></td>
+<%elseif curtab=5 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner5.gif"></td>
+<%elseif curtab=6 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner6.gif"></td>
+<%elseif curtab=7 then %>
+<td width="178" height="60" background="/shared/graphics/header/corner7.gif"></td>
+<%end if%>
+</tr>
+</table>

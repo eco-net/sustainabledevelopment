@@ -1,0 +1,121 @@
+a:link {
+	text-decoration: none;
+	color: #5D678A
+}
+
+a:active {
+	text-decoration: none;
+	color: #5D678A
+}
+
+a:visited {
+	text-decoration: none;
+	color: #5D678A;
+}
+
+a:hover {
+	color: #FF9900;
+	text-decoration: none;
+}
+
+
+BODY {
+	background-color: #FAFAF4
+}
+
+BODY, TABLE, TD {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.sitetag {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #5D678A;
+}
+
+.footer {
+	font-size: 10px;
+	color: #666666}
+
+
+.menuBar {
+	background-color: #77AED9;
+	padding: 3px;
+; text-align: center
+}
+
+.sidebarHeaderBox {
+	background-color: #CD9933;
+}
+
+.sidebarHeader {
+	font-weight: bold;
+	font-size: 11px;
+	color: #5D678A;
+	text-align : left;
+}
+
+.homeBigbox {
+	background-color: transparent;
+}
+.small{
+	font-size : 9px;
+}
+}
+
+.homeSmallbox {
+	background-color: #CCCC98;
+}
+
+.contentHeader1 {
+	font-size: 15px;
+	vertical-align: bottom;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+.contentHeader2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	font-weight: bold;
+	line-height: 15px;
+	font-size: 12px
+}
+
+
+.listheader {
+	font-weight: bold;
+	font-size: 11px
+}
+.faktaboksheader {
+	font-weight: bold;
+}
+
+
+.formInputobject {
+	font-size: 9px; 
+	width: 150px;
+}
+
+.formSubmitbutton {
+	font-size: 10px;
+	width: 60px;
+	font-weight : bold;
+}
+
+.formbutton {
+	font-size: 10px;
+	width: 60px
+}
+
+.formLabeltext {
+	font-weight: bold;
+}
+
+.formTextfieldObject { font-size: 11px; width: 150px; }
+.home {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal}
+.homeHeader {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #5D678A}
+.formTextfieldObjectBig { font-size: 11px; width: 250px; ; height: 250px}
+.formTextfieldObjectMid { font-size: 11px; width: 250px; ; height: 50px}
+UL {list-style-image: url(/shared/graphics/square_bullet.gif);margin-top: 6px;margin-bottom: 6px;} 
